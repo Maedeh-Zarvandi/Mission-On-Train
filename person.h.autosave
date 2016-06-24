@@ -1,0 +1,20 @@
+#ifndef PERSON_H
+#define PERSON_H
+#include<QGraphicsPixmapItem>
+//#include<train.h>
+class person
+{
+
+public:
+    QGraphicsPixmapItem* pic;
+    //train*TRain;
+person();
+   int x , y;
+
+public slots:
+    virtual void move()=0;
+   virtual void shoot()=0;
+
+};
+
+#endif // PERSON_H
