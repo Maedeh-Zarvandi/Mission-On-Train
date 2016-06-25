@@ -1,6 +1,15 @@
-#include"person.h"
-#include"player.h"
-person::person(){
-    x=0;
-    y=0;
+#include "person.h"
+ #include <QGraphicsScene>
+ #include <QKeyEvent>
+ #include "weapon.h"
+ #include "enemy.h"
+
+
+
+
+
+
+person::person(QGraphicsItem *parent): QGraphicsPixmapItem(parent)
+{
+      bulletsound = new QMediaPlayer();
 }

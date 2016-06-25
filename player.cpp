@@ -1,10 +1,15 @@
 #include "player.h"
-#include "person.h"
-//class person;
+ #include <QGraphicsScene>
+ #include <QKeyEvent>
+ #include "weapon.h"
+ #include "enemy.h"
+#include<person.h>
 
-void player::move(){
-    x=0;
-    y=0;
+player::player(QGraphicsItem *parent)
+{
+    bulletsound->setMedia(QUrl("qrc:/sound/gunshot_1.wav"));
+
+
+    // set graphic
+    setPixmap(QPixmap(":/photo/player1.png"));
 }
-
-
