@@ -1,20 +1,23 @@
 #ifndef HEART_H
 #define HEART_H
 
-#endif
+#include <QGraphicsPixmapItem>
+
 
 #include <QGraphicsTextItem>
 
 
- class heart: public QGraphicsTextItem{
+ class heart//: public QGraphicsTextItem
+ {
  public:
-     heart(QGraphicsItem * parent=0);
+     QGraphicsPixmapItem* Heart;
+     heart();
      void decrease();
-     int getHeart();
- private:
-     int heart;
+     //int getHeart();
+     int heartVal;
 };
 
-
+//QGraphicsItem * parent=0
 
 #endif // HEART_H
+

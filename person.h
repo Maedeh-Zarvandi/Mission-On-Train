@@ -1,25 +1,23 @@
 #ifndef PERSON_H
 #define PERSON_H
-#endif
+#include<QGraphicsPixmapItem>
+#include "mainwindow.h"
+#include "heart.h"
+#include<QGraphicsScene>
+//#include<train.h>
+class person
+{
 
- #include <QGraphicsPixmapItem>
- #include <QObject>
- #include <QGraphicsItem>
- #include <QMediaPlayer>
+public:
+    QGraphicsPixmapItem* pic;
+    //train*TRain;
+//person();
+   int x , y;
+   //heart h;
 
-
- class person:public QObject, public QGraphicsPixmapItem{
-     Q_OBJECT
- public:
-     person(QGraphicsItem * parent=0);
-
- public slots:
-    virtual void moveP()=0;
- private:
-     QMediaPlayer * bulletsound;
- };
-
-
-
+public slots:
+   //virtual void move();
+   //virtual void shoot();
+};
 
 #endif // PERSON_H

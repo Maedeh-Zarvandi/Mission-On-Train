@@ -2,26 +2,27 @@
  #include <QFont>
 
 
- diamond::diamond(QGraphicsItem *parent): QGraphicsTextItem(parent){
+ diamond::diamond(){//: QGraphicsTextItem(parent){
      // initialize the score to 0
-     diamond = 0;
+     diamondVal = 0;
 
 
      // draw the text
-    setPlainText(QString("Diamond: ") + QString::number(diamond));
-     setDefaultTextColor(Qt::yellow);
-     setFont(QFont("times",16));
+    /* TI=new QGraphicsTextItem;
+    TI->setPlainText(QString("Diamond: ") + QString::number(diamondVal));
+    TI->setPos(5,5);
+     TI->setDefaultTextColor(Qt::yellow);
+     TI->setFont(QFont("times",16));*/
  }
 
 
  void diamond::increase(){
-    diamond++;
-     setPlainText(QString("Diamond: ") + QString::number(diamond));
+    diamondVal++;
+     //TI->setPlainText(QString("Diamond: ") + QString::number(diamondVal));
  }
 
-
- int diamond::getDiamond(){
-     return diamond;
- }
+ /*int diamond::getDiamond(){
+     return diamondVal;
+ }*/
 
 

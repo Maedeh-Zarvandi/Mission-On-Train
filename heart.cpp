@@ -2,25 +2,29 @@
 #include <QFont>
 
 
- heart::heart(QGraphicsItem *parent): QGraphicsTextItem(parent){
+ heart::heart( ){
 
-     heart = 2;
+     //heartVal =fg;
 
 
      // draw the text
-     setPlainText(QString("Heart: ") + QString::number(heart));
+     /*setPlainText(QString("Heart: ") + QString::number(heartVal));
      setDefaultTextColor(Qt::red);
-     setFont(QFont("times",16));
+     setFont(QFont("times",16));*/
  }
 
 
  void heart::decrease(){
-     heart--;
-     setPlainText(QString("Heart: ") + QString::number(heart));
+     heartVal--;
+     //setPlainText(QString("Heart: ") + QString::number(heartVal));
  }
 
 
- int heart::getHeart(){
-     return health;
- }
+/* int heart::getHeart(){
+     return heartVal;
+ }*/
+
+
+
+
 

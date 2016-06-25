@@ -1,21 +1,23 @@
 #ifndef DIAMOND_H
 #define DIAMOND_H
-
-#endif
-
- #include <QGraphicsTextItem>
+#include<QGraphicsPixmapItem>
 
 
- class diamond: public QGraphicsTextItem{
+// #include <QGraphicsTextItem>
+
+
+ class diamond{//: public QGraphicsTextItem{
  public:
-     diamond(QGraphicsItem * parent=0);
+     //QGraphicsTextItem*TI;
+     diamond();
      void increase();
-     int getDiamond();
-private:
-     int diamond;
+     //int getDiamond();
+     QGraphicsPixmapItem* Diamond;
+//private:
+     int diamondVal;
  };
 
 
- #endif // SCORE_H
+
 
 #endif // DIAMOND_H

@@ -1,15 +1,11 @@
 #include "person.h"
- #include <QGraphicsScene>
- #include <QKeyEvent>
- #include "weapon.h"
- #include "enemy.h"
-
-
-
-
-
-
-person::person(QGraphicsItem *parent): QGraphicsPixmapItem(parent)
+#include "mainwindow.h"
+#include "heart.h"
+#include<QGraphicsScene>
+/*person::person()
 {
-      bulletsound = new QMediaPlayer();
-}
+    //Userpic = userpuic;
+}*/
+
+
+
